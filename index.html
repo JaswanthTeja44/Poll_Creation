@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poll Creator JHTK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <h1>Poll Creator Tool JHTK</h1>
+
+  <div class="poll-creator">
+    <input type="text" id="pollTitle" placeholder="Enter your poll question...">
+    <div class="options" id="options">
+      <div class="option"><input type="text" placeholder="Option 1" class="option-input"></div>
+      <div class="option"><input type="text" placeholder="Option 2" class="option-input"></div>
+    </div>
+    <button onclick="addOption()">+ Add Option</button>
+    <button onclick="createPoll()">Create Poll</button>
+  </div>
+
+  <div class="results-container" id="resultsContainer">
+    <h2>Live Results</h2>
+    <div id="pollQuestion"></div>
+    <div id="results"></div>
+    <div class="link-share" id="linkDisplay" onclick="copyLink()"></div>
+  </div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
